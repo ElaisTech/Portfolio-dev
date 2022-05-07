@@ -11,32 +11,59 @@
     <title>Portfolio</title>
 </head>
 <!--HeadBar-->
-<header class="bg-black fixed top-0" style="width: 100%; font-family: 'Lobster', cursive; position:fixed; ">
+<header class="bg-black fixed top-0" style="width: 80%; font-family: 'Lobster', cursive; position:fixed; border-radius: 0px 0px 10px 10px;">
         <ul class="flex justify-between ">
             <li class="text-white m-2"> <a href="#">Progetti</a> </li>
-            <li class="text-white m-2"> <a href="#">Studi</a> </li>
-            <li class="text-white m-2"> <a href="#">Lavori</a> </li>
+            <li class="text-white m-2"> <a href="#">Competenze¢</a> </li>
             <li class="text-white m-2"> <a href="#">Chi sono?</a> </li>
         </ul>
       
     
 </header>
 <!--HeadBar stop -->
-<body class="bg-slate-100 flex flex-col items-center justify-center" style="font-family: 'Lobster', cursive;">
+<body class="flex flex-col items-center justify-center" style="font-family: 'Lobster', cursive;">
   <!--bodywrapper-->
 
-       <div class="flex flex-col bg-gradient-to-r from-blue-400 via-purple-400 to-orange-300 lg " style="width: 80%; box-shadow: -1px 10px 20px 0px #3c3c3c;">
+       <div class="flex flex-col bg-slate-200 " style="width: 80%; box-shadow: -1px 10px 20px 0px #3c3c3c;">
 
         
 
         <!--Avatar Wrapper-->
-        <div class="mt-10 flex justify-center" id="imagewrapper" >
-            <img src="https://i.ibb.co/wCWvC5m/E38-BF821-3104-4-D52-BEA9-04777-B11-C5-E2.png" alt="Elais' Avatar" border="0" style="max-width: 30%;">
+        <div class="mt-10 flex justify-center items-center align-middle origin-center " id="imagewrapper" >
+            <img src="https://i.ibb.co/TgqHQVk/IMG-31-CCA31-B2-B25-1.png" alt="Elais' Avatar" border="0" style="max-width: 30%;">
+            <div class="lg:m-5">
+                 <div class="m-5">
+                    <h1>Ciao! Come ti chiami?</h1>
+                  <!-- <img src="https://i.ibb.co/VV81q1z/1200px-Speech-balloon-svg.png" alt="speech cloud" class="w-5/12 h-30"> -->
+                </div>
+                 <div class="flex justify-between">
+                      <div>
+                           <!--name input for the user-->
+                             <input type="text" id="nameinput" placeholder="come ti chiami?" class="w-auto">
+                     </div>
+                        <div>
+                            <!--Get the name through the button-->
+                            <button id="getname">Click!</button>
+                        </div>
+                  </div>
+             </div>
 
          </div>
         
          <!--knowledge-->
+         <div class="flex flex-col justify-center text-center items-center mt-8">
+             <div id="nicetomeetyou">
+
+             </div>
+             <h1 class="text-lg">Queste sono le mie competenze</h1>
+             <p class="flex justify-center text-xs">So che posso migliorare, <br> ma continua a visitare la mia pagina <br> per tenerti aggiornato! <br> Chi si ferma invecchia!
+             </p>
+         </div>
         <div class="flex flex-col align-middle"> 
+    <!--il placeholder dove andrà la prima frase con il nome del nostro utente-->
+            <div id="output1">
+
+            </div>
             <ul class="" style="margin: 3rem;">
                 <div class="flex flex-col items-center" id="element" >
                    
@@ -76,37 +103,58 @@
             </ul>
             <!--knowledge stop-->
           </div>
-          <hr class="rounded" style="border-style: solid; border-color: black; border-width: 2px; border-radius: 10%;">
-          <!--My Works-->
-
-          <div class="flex justify-center m-5">
-            <h1 class="text-2xl">i miei lavori</h1>
-         </div>
-          <div class="flex flex-col items-center mt-8">
-              <p>Sito x</p>
-            <div class="bg-white shadow-slate-700 shadow-lg">
-                <a href="#"><img src="https://i.ibb.co/RjdKXLP/Google-logo.png" style="height: 7rem; width: auto;" alt="Google-logo" border="0"></a>
-                
-            </div>
-            <div class="flex flex-col items-center mt-8">
-                <p>Sito x</p>
-              <div class="bg-white shadow-slate-700 shadow-lg">
-                  <a href="#"><img src="https://i.ibb.co/RjdKXLP/Google-logo.png" style="height: 7rem; width: auto;" alt="Google-logo" border="0"></a>
-                  
-              </div>
-              <div class="flex flex-col items-center mt-8">
-                <p>Sito x</p>
-              <div class="bg-white shadow-slate-700 shadow-lg">
-                  <a href="#"><img src="https://i.ibb.co/RjdKXLP/Google-logo.png" style="height: 7rem; width: auto;" alt="Google-logo" border="0"></a>
-                  
-              </div>
+<!--il placeholder dove andrà la seconda frase con il nome del nostro utente-->
+          <div class="flex flex-col justify-center text-center items-center m-10" id="output2">
 
           </div>
 
+          <div class="flex justify-center">
+            <img src="https://i.ibb.co/QKpvJjB/Schermata-2022-05-07-alle-10-16-01.png" alt="Schermata-2022-05-07-alle-10-16-01" border="0" class="w-8/12 rounded-3xl shadow-2xl hover:w-9/12">
+          </div>
+          <!--My Works-->
+
+          <div class="flex justify-center m-5 ">
+            <h1 class="text-2xl">i miei lavori</h1>
+        </div>
+
+        <div class="mt-10 flex justify-center items-center align-middle origin-center " id="output3">
+            
+
+        </div>
+            <!--start -->
+            <div>
+        
+         <div class="flex flex-col lg:flex-row lg:justify-center lg:flex m-7">
+
+              <div class="flex flex-col items-center justify-center mt-8 lg:m-5">
+                  <p>Sito x</p>
+            
+                    <a href="#"><img src="https://i.ibb.co/zm51WX2/template.jpg" class="w-10/12 shadow-2xl" alt="Google-logo" border="0"></a>
+                
+            
+             </div>
+             <div class="flex flex-col items-center justify-center mt-8 lg:m-5">
+                      <p>Sito x</p>
+          
+                       <a href="#"><img src="https://i.ibb.co/zm51WX2/template.jpg" class="w-10/12 shadow-2xl" alt="Google-logo" border="0"></a>
+              
+          
+                     </div>
+             <div class="flex flex-col items-center justify-center mt-8 lg:m-5">
+                  <p>Sito x</p>
+          
+                    <a href="#"><img src="https://i.ibb.co/zm51WX2/template.jpg" class="w-10/12 shadow-2xl" alt="Google-logo" border="0"></a>
+              
+          
+             </div>
+         
+        </div>
+        <!--Stop-->
+
           <hr class="rounded w-1000" style="border-style: solid; border-color: black; border-width: 2px; border-radius: 10%;">
           
-          <div class="m-10 shadow-xl">
-              <ul>
+          <div class="m-10 ">
+              <ul class="flex justify-center flex-col items-center">
                   <li>Nome: Enrico</li>
                   <li>Cognome: Lazzaro</li>
                   <li>Mail: enrico.info.h3g@gmail.com</li>
@@ -115,7 +163,25 @@
           </div>
        </div>
        
+       <hr class="rounded w-1000" style="border-style: solid; border-color: black; border-width: 2px; border-radius: 10%;">
 
+       <div>
+           <h1>Chi sono?</h1>
+           <p>Piacere, il mio nome è Enrico.</p>
+           <p>Sono un ragazzo, solo questo. <br> Ma con una grande passione per la programmazione. <br> Adoro passare tempo a scrivere codice e scovare bug da correggere
+           </p>
+           <p>E tu, chi sei?</p>
+           <div>
+                <input type="text" class="bg-slate-100">
+                <button class="">click</button>
+            </div>
+        
+
+       </div>
+
+       <div>
+           <h2>Stai cercando qualcuno che ti aiuti a creare la tua identità digitale?</h2>
+       </div>
       
     
 </body>
