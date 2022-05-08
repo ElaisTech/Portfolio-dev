@@ -1,6 +1,8 @@
 const btn = document.querySelector('#getname');
 
 const knowledge = () => {
+
+
     const name = document.querySelector('#nameinput').value;
 
     const newDiv = document.createElement('div');
@@ -28,4 +30,15 @@ const knowledge = () => {
 
 }
 
+
+const clean = () => {
+  const output1 = document.querySelector('#nicetomeetyou'); 
+  const output2 = document.querySelector('#output2');
+  const output3 = document.querySelector('#output3');
+  output1.innerHTML = '';
+  output2.innerHTML = '';
+  output3.innerHTML = '';
+}
+
+btn.addEventListener('click', clean);
 btn.addEventListener('click', knowledge);
