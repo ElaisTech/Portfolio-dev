@@ -13,18 +13,18 @@
 <!--HeadBar-->
 <header class="bg-black fixed top-0" style="width: 80%; font-family: 'Lobster', cursive; position:fixed; border-radius: 0px 0px 10px 10px;">
         <ul class="flex justify-between ">
-            <li class="text-white m-2"> <a href="#">Progetti</a> </li>
-            <li class="text-white m-2"> <a href="#">Competenze¢</a> </li>
+            <li class="text-white m-2"> <a href="#projects">Progetti</a> </li>
+            <li class="text-white m-2"> <a href="#knowledge">Competenze¢</a> </li>
             <li class="text-white m-2"> <a href="#">Chi sono?</a> </li>
         </ul>
       
     
 </header>
 <!--HeadBar stop -->
-<body class="flex flex-col items-center justify-center" style="font-family: 'Lobster', cursive;">
+<body class="flex flex-col items-center justify-center" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
   <!--bodywrapper-->
 
-       <div class="flex flex-col bg-slate-200 " style="width: 80%; box-shadow: -1px 10px 20px 0px #3c3c3c;">
+       <div class="flex flex-col bg-orange-100 " style="width: 80%; box-shadow: -1px 10px 20px 0px #3c3c3c;">
 
         
 
@@ -39,11 +39,11 @@
                  <div class="flex justify-between">
                       <div>
                            <!--name input for the user-->
-                             <input type="text" id="nameinput" placeholder="come ti chiami?" class="w-auto">
+                             <input type="text" id="nameinput" placeholder="come ti chiami?" class="w-auto shadow-lg">
                      </div>
                         <div>
                             <!--Get the name through the button-->
-                            <button id="getname">Click!</button>
+                            <button id="getname" class="bg-slate-300 shadow-lg">Click!</button>
                         </div>
                   </div>
              </div>
@@ -55,8 +55,8 @@
              <div id="nicetomeetyou">
 
              </div>
-             <h1 class="text-lg">Queste sono le mie competenze</h1>
-             <p class="flex justify-center text-xs">So che posso migliorare, <br> ma continua a visitare la mia pagina <br> per tenerti aggiornato! <br> Chi si ferma invecchia!
+             <h1 class="text-lg lg:text-3xl">Queste sono le mie competenze</h1>
+             <p class="flex justify-center text-xs lg:text-2xl">Cerco sempre di migliorarle ed aggiungerne di nuove! <br> Chi si ferma invecchia!
              </p>
          </div>
         <div class="flex flex-col align-middle"> 
@@ -64,39 +64,39 @@
             <div id="output1">
 
             </div>
-            <ul class="" style="margin: 3rem;">
+            <ul class="" style="margin: 3rem;" id="knowledge">
                 <div class="flex flex-col items-center" id="element" >
                    
-                <li class="flex animate-bounce" style="margin: 1rem;">
-                    <p class="hover:text-gray-50">HTML5</p>
-                    <div style="margin-left: 1rem; width: 100px; background-color: rgb(250, 249, 215); border-radius: 10% 10px 10px 10px;">
+                <li class="flex animate-bounce" style="margin: 1rem;" id="html" onscroll="disappear()">
+                    <p class="hover:text-gray-50 lg:text-2xl">HTML5</p>
+                    <div class="shadow-lg" style="margin-left: 1rem; width: 100px; background-color: rgb(250, 249, 215); border-radius: 10% 10px 10px 10px;">
                         <p style="width: 90%;  border-radius: 10% 10px 10px 10px;" class="bg-yellow-300 hover:bg-orange-300">90%</p>
                     </div>
                 </li>
 
-                <li class="flex animate-bounce" style="margin: 1rem;">
-                    <p class="hover:text-gray-50">CSS</p>
-                    <div style="margin-left: 1rem; width: 100px; background-color: rgb(250, 249, 215); border-radius: 10% 10px 10px 10px;">
+                <li class="flex animate-bounce" style="margin: 1rem;" id="css">
+                    <p class="hover:text-gray-50 lg:text-2xl">CSS</p>
+                    <div class="shadow-lg" style="margin-left: 1rem; width: 100px; background-color: rgb(250, 249, 215); border-radius: 10% 10px 10px 10px;">
                         <p style="width: 95%; border-radius: 10% 10px 10px 10px;" class="bg-yellow-300 hover:bg-orange-300">95%</p>
                     </div>
                 </li>
 
-                <li class="flex animate-bounce" style="margin: 1rem;">
-                    <p class="hover:text-gray-50">Javascript</p>
-                    <div style="margin-left: 1rem; width: 100px; background-color: rgb(250, 249, 215); border-radius: 10% 10px 10px 10px;">
+                <li class="flex animate-bounce" style="margin: 1rem;" id="javascript">
+                    <p class="hover:text-gray-50 lg:text-2xl">Javascript</p>
+                    <div class="shadow-lg" style="margin-left: 1rem; width: 100px; background-color: rgb(250, 249, 215); border-radius: 10% 10px 10px 10px;">
                         <p style="width: 45%; border-radius: 10% 10px 10px 10px;" class="bg-yellow-300 hover:bg-orange-300">45%</p>
                     </div>
                 </li>
-                <li class="flex animate-bounce" style="margin: 1rem;">
-                    <p class="hover:text-gray-50">Tailwindcss</p>
-                    <div style="margin-left: 1rem; width: 100px; background-color: rgb(250, 249, 215); border-radius: 10% 10px 10px 10px;">
+                <li class="flex animate-bounce" style="margin: 1rem;" id="tailwind">
+                    <p class="hover:text-gray-50 lg:text-2xl">Tailwindcss</p>
+                    <div class="shadow-lg" style="margin-left: 1rem; width: 100px; background-color: rgb(250, 249, 215); border-radius: 10% 10px 10px 10px;">
                         <p style="width: 45%;  border-radius: 10% 10px 10px 10px;" class="bg-yellow-300 hover:bg-orange-300">45%</p>
                     </div>
                 </li>
 
-                <li class="flex animate-bounce">
-                    <p class="hover:text-gray-50">React</p>
-                    <div style="margin-left: 1rem; width: 100px; background-color: rgb(250, 249, 215); border-radius: 10% 10px 10px 10px;">
+                <li class="flex animate-bounce" style="margin: 1rem;" id="react">
+                    <p class="hover:text-gray-50 lg:text-2xl">React</p>
+                    <div class="shadow-lg" style="margin-left: 1rem; width: 100px; background-color: rgb(250, 249, 215); border-radius: 10% 10px 10px 10px;">
                         <p style="width: 10%;  border-radius: 10% 10px 10px 10px;" class="bg-yellow-300 hover:bg-orange-300">10%</p>
                     </div>
                 </li>
@@ -113,9 +113,7 @@
           </div>
           <!--My Works-->
 
-          <div class="flex justify-center m-5 ">
-            <h1 class="text-2xl">i miei lavori</h1>
-        </div>
+         
 
         <div class="mt-10 flex justify-center items-center align-middle origin-center " id="output3">
             
@@ -123,8 +121,8 @@
         </div>
             <!--start -->
             <div>
-        
-         <div class="flex flex-col lg:flex-row lg:justify-center lg:flex m-7">
+        <!--PROJECTS-->
+         <div class="flex flex-col justify-center lg:flex-row lg:justify-center lg:flex m-7" id="projects">
 
               <div class="flex flex-col items-center justify-center mt-8 lg:m-5">
                   <p>Sito x</p>
@@ -151,37 +149,36 @@
         </div>
         <!--Stop-->
 
-          <hr class="rounded w-1000" style="border-style: solid; border-color: black; border-width: 2px; border-radius: 10%;">
-          
-          <div class="m-10 ">
-              <ul class="flex justify-center flex-col items-center">
-                  <li>Nome: Enrico</li>
-                  <li>Cognome: Lazzaro</li>
-                  <li>Mail: enrico.info.h3g@gmail.com</li>
-                  <li>Numero: workin' on</li>
-              </ul>
-          </div>
-       </div>
        
-       <hr class="rounded w-1000" style="border-style: solid; border-color: black; border-width: 2px; border-radius: 10%;">
+      
 
-       <div>
-           <h1>Chi sono?</h1>
-           <p>Piacere, il mio nome è Enrico.</p>
-           <p>Sono un ragazzo, solo questo. <br> Ma con una grande passione per la programmazione. <br> Adoro passare tempo a scrivere codice e scovare bug da correggere
-           </p>
-           <p>E tu, chi sei?</p>
-           <div>
-                <input type="text" class="bg-slate-100">
-                <button class="">click</button>
-            </div>
-        
+       
 
-       </div>
-
-       <div>
+       <div class="flex justify-center m-10 mt-20">
+           <div class="flex flex-col text-center">
            <h2>Stai cercando qualcuno che ti aiuti a creare la tua identità digitale?</h2>
+           <h3 class="m-10">Contattami subito!</h3>
+           <ul class="flex justify-center align-middle object-center">
+               <li> <a href="https://wa.me/339xxxxxxx"> <img src="https://i.ibb.co/cgCKwvG/whatsapp.png" alt="whatsapp" border="0" class="w-10/12 hover:w-11/12"> </a> </li>
+               <li> <a href="#"> <img src="https://i.ibb.co/ZhbzKtv/facebook.png" alt="facebook" border="0" class="w-10/12 hover:w-11/12" > </a> </li>
+               <li> <a href="#"> <img src="https://i.ibb.co/71B1h02/insta.png" alt="insta" border="0" class="w-10/12 hover:w-11/12"> </a> </li>
+               <li> <a href="#"> <img src="https://i.ibb.co/19NBGL6/youtube.png" alt="youtube" border="0" class="w-9/12 hover:w-11/12"> </a> </li>
+           </ul>
+        </div>
        </div>
+
+     
+          
+       <div class="m-10 ">
+           <ul class="flex justify-center flex-col items-center">
+               <li>Nome: Enrico</li>
+               <li>Mail: enrico.info.h3g@gmail.com</li>
+               <li>Numero: workin' on</li>
+           </ul>
+       </div>
+    </div>
+
+
       
     
 </body>

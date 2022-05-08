@@ -20,7 +20,7 @@ const knowledge = () => {
    const coolMe = document.createElement('img')
    coolMe.src = 'https://i.ibb.co/ZBpRJp8/me-cool.png';
    coolMe.className= 'm-w-6/12'
-   const myWorks = document.createTextNode('Ti faccio vedere alcuni dei miei lavori' + ' ' + name);
+   const myWorks = document.createTextNode('Ti faccio vedere alcuni dei miei lavori' + ',' + ' ' + name + '.');
    const output3 = document.querySelector('#output3');
    newDiv3.appendChild(coolMe);
    newDiv3.appendChild(myWorks);
