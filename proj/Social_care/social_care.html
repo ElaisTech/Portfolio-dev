@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Portfolio/proj/index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        </style>
+    <title>Portfolio</title>
+</head>
+<!--HeadBar-->
+<header class="bg-black fixed top-0" style="width: 80%; font-family: 'Lobster', cursive; position:fixed; border-radius: 0px 0px 10px 10px;">
+        <ul class="flex justify-between ">
+            <li class="text-white m-2"> <a href="/Portfolio/proj/index.html"> <-- Torna alla Home</a> </li>
+     
+            
+        </ul>
+      
+    
+</header>
+<!--HeadBar stop -->
+<body class="flex flex-col items-center justify-center bg-slate-400" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+  <!--bodywrapper-->
+
+       <div class="flex flex-col bg-orange-100 " style="width: 80%; box-shadow: -1px 10px 20px 0px #3c3c3c;">
+
+        
+
+        <!--Avatar Wrapper-->
+        <div class="mt-10 flex flex-col align-middle justify-center object-center items-center align-middle origin-center " id="imagewrapper" >
+            <img src="https://i.ibb.co/TgqHQVk/IMG-31-CCA31-B2-B25-1.png" alt="Elais' Avatar" border="0" style="max-width: 30%;">
+            <div class="lg:m-5">
+                 <div class="m-5">
+                    <h1 class="text-center">Cosa potrebbe servirti?</h1>
+                  <!-- <img src="https://i.ibb.co/VV81q1z/1200px-Speech-balloon-svg.png" alt="speech cloud" class="w-5/12 h-30"> -->
+                </div>
+                 <div class="flex justify-center items-center flex-col ">
+                     <!--Seleziona servizio che serve al cliente-->
+                      <div>
+                          <select name="activity" id="activities" class="rounded-xl">
+                              <option value="none" id="activities">Seleziona il servizio</option>
+                              <option value="create" id="activities">Creare delle pagine social!</option>
+                              <option value="dontcreate" id="activities">Affidare le mie pagine!</option>
+                          </select>
+                          
+                     </div>
+                     
+                     <div class="m-10">
+                         <p class="text-center">Quali social ti interessano?</p>
+                         
+                         <label for="social1"> <input type="checkbox" id="Facebook" name="Youtube" value="Youtube"> Facebook </label><br>
+                         <label for="social2"><input type="checkbox" id="Instagram" name="Instagram" value="Instagram"> Instagram</label><br>
+                         <label for="social3"><input type="checkbox" id="Youtube" name="Youtube" value="Youtube"> Youtube</label><br>
+                         <label for="social3"><input type="checkbox" id="LinkedIn" name="LinkedIn" value="LinkedIn"> LinkedIn</label><br>
+                         
+                        
+                   </div>
+
+                   <div class="flex flex-col justify-center m-5">
+                    <p class="text-center">Quante pubblicazioni vorresti fare al mese?</p>
+                    <input type="text" id="pubblicazioni" class="rounded-lg m-5">
+
+                   </div>
+                        <div>
+                            
+                            <!--Get the name through the button-->
+                            <button id="elaborateprev" class="bg-slate-300 shadow-lg">Click!</button>
+                        </div>
+                  </div>
+             </div>
+
+         </div>
+        
+            <!--start -->
+            <div>
+        
+
+                <div id="creationprice" class="flex flex-col justify-center m-5 text-center">
+
+                </div>
+                
+                <div id="monthlyprice" class="flex flex-col justify-center m-5 text-center">
+
+                </div>
+       
+      
+
+       
+
+       <div class="flex justify-center m-10 mt-20">
+           <div class="flex flex-col text-center">
+           <h2>Stai cercando qualcuno che ti aiuti a creare la tua identità digitale?</h2>
+           <h3 class="m-10">Contattami subito!</h3>
+           <ul class="flex justify-center align-middle object-center">
+               <li> <a href="https://wa.me/3703664224"> <img src="https://i.ibb.co/cgCKwvG/whatsapp.png" alt="whatsapp" border="0" class="w-10/12 hover:w-11/12"> </a> </li>
+               <li> <a href="#"> <img src="https://i.ibb.co/ZhbzKtv/facebook.png" alt="facebook" border="0" class="w-10/12 hover:w-11/12" > </a> </li>
+               <li> <a href="#"> <img src="https://i.ibb.co/71B1h02/insta.png" alt="insta" border="0" class="w-10/12 hover:w-11/12"> </a> </li>
+               <li> <a href="https://www.youtube.com/channel/UCyzWE1mbGjDK6cix5UKYYMQ"> <img src="https://i.ibb.co/19NBGL6/youtube.png" alt="youtube" border="0" class="w-9/12 hover:w-11/12"> </a> </li>
+           </ul>
+        </div>
+       </div>
+
+     
+          
+       <div class="m-10 ">
+           <ul class="flex justify-center flex-col items-center">
+               <li>Nome: Enrico</li>
+               <li>Mail: enrico.info.h3g@gmail.com</li>
+               <li>Numero: 3703664224</li>
+           </ul>
+       </div>
+    </div>
+
+
+      
+    
+</body>
+<script src="./social_care.js"></script>
+</html>

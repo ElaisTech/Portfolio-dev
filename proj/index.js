@@ -1,3 +1,4 @@
+
 const btn = document.querySelector('#getname');
 
 const knowledge = () => {
@@ -40,5 +41,8 @@ const clean = () => {
   output3.innerHTML = '';
 }
 
+elaborateprev.addEventListener('click', preventive);
 btn.addEventListener('click', clean);
 btn.addEventListener('click', knowledge);
+
+
