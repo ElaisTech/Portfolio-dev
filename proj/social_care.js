@@ -86,7 +86,7 @@ const preventive = () => {
 
       }
 
-      document.querySelector('#monthlyprice').innerHTML = 'Questo è il preventivo per la cura delle tue pagine! <br>' + ' ' + '€'+ monthly +',00'
+      document.querySelector('#monthlyprice').innerHTML = 'Questo è il preventivo mensile per la cura delle tue pagine! <br>' + ' ' + '€'+ monthly +',00'
       
       
 

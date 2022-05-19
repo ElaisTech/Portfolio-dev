@@ -11,9 +11,9 @@
     <title>Portfolio</title>
 </head>
 <!--HeadBar-->
-<header class="bg-black fixed top-0" style="width: 80%; font-family: 'Lobster', cursive; position:fixed; border-radius: 0px 0px 10px 10px;">
-        <ul class="flex justify-between ">
-            <li class="text-white m-2"> <a href="index.html"> <-- Torna alla Home</a> </li>
+<header class="bg-black fixed top-0 left-10  w-10\/12 lg:left-20" style="font-family: 'Lobster', cursive; position:fixed; border-radius: 0px 0px 10px 10px;">
+        <ul class="flex justify-start ">
+            <li class="text-white m-3 lg:m-4"> <a href="index.html"> <-- Torna alla Home</a> </li>
      
             
         </ul>
@@ -29,17 +29,17 @@
         
 
         <!--Avatar Wrapper-->
-        <div class="mt-10 flex flex-col align-middle justify-center object-center items-center align-middle origin-center " id="imagewrapper" >
+        <div class="mt-10 flex flex-col align-middle justify-center object-center items-center align-middle origin-center" id="imagewrapper" >
             <img src="https://i.ibb.co/TgqHQVk/IMG-31-CCA31-B2-B25-1.png" alt="Elais' Avatar" border="0" style="max-width: 30%;">
             <div class="lg:m-5">
                  <div class="m-5">
-                    <h1 class="text-center">Cosa potrebbe servirti?</h1>
+                    <h1 class="text-center lg:text-4xl">Cerchi qualcuno che ti aiuti con i Social?</h1>
                   <!-- <img src="https://i.ibb.co/VV81q1z/1200px-Speech-balloon-svg.png" alt="speech cloud" class="w-5/12 h-30"> -->
                 </div>
                  <div class="flex justify-center items-center flex-col ">
                      <!--Seleziona servizio che serve al cliente-->
                       <div>
-                          <select name="activity" id="activities" class="rounded-xl">
+                          <select name="activity" id="activities" class="rounded-xl shadow-lg">
                               <option value="none" id="activities">Seleziona il servizio</option>
                               <option value="create" id="activities">Creare delle pagine social!</option>
                               <option value="dontcreate" id="activities">Affidare le mie pagine!</option>
@@ -48,19 +48,19 @@
                      </div>
                      
                      <div class="m-10">
-                         <p class="text-center">Quali social ti interessano?</p>
-                         
-                         <label for="social1"> <input type="checkbox" id="Facebook" name="Youtube" value="Youtube"> Facebook </label><br>
-                         <label for="social2"><input type="checkbox" id="Instagram" name="Instagram" value="Instagram"> Instagram</label><br>
-                         <label for="social3"><input type="checkbox" id="Youtube" name="Youtube" value="Youtube"> Youtube</label><br>
-                         <label for="social3"><input type="checkbox" id="LinkedIn" name="LinkedIn" value="LinkedIn"> LinkedIn</label><br>
-                         
+                         <p class="text-center lg:text-3xl">Quali social ti interessano?</p>
+                         <div class="flex flex-col  items-center lg:flex-row lg:justify-between lg:m-5">
+                         <label for="social1" class="m-2"> <input type="checkbox" id="Facebook" name="Youtube" value="Youtube"> Facebook </label><br>
+                         <label for="social2" class="m-2"><input type="checkbox" id="Instagram" name="Instagram" value="Instagram"> Instagram</label><br>
+                         <label for="social3" class="m-2"><input type="checkbox" id="Youtube" name="Youtube" value="Youtube"> Youtube</label><br>
+                         <label for="social3" class="m-2"><input type="checkbox" id="LinkedIn" name="LinkedIn" value="LinkedIn"> LinkedIn</label><br>
+                        </div>
                         
                    </div>
 
                    <div class="flex flex-col justify-center m-5">
-                    <p class="text-center">Quante pubblicazioni vorresti fare al mese?</p>
-                    <input type="text" id="pubblicazioni" class="rounded-lg m-5">
+                    <p class="text-center lg:text-3xl">Quante pubblicazioni vorresti fare al mese?</p>
+                    <input type="text" id="pubblicazioni" class="rounded-lg m-5 shadow-lg">
 
                    </div>
                         <div>
@@ -96,7 +96,7 @@
            <ul class="flex justify-center align-middle object-center">
                <li> <a href="https://wa.me/3703664224"> <img src="https://i.ibb.co/cgCKwvG/whatsapp.png" alt="whatsapp" border="0" class="w-10/12 hover:w-11/12"> </a> </li>
                <li> <a href="#"> <img src="https://i.ibb.co/ZhbzKtv/facebook.png" alt="facebook" border="0" class="w-10/12 hover:w-11/12" > </a> </li>
-               <li> <a href="#"> <img src="https://i.ibb.co/71B1h02/insta.png" alt="insta" border="0" class="w-10/12 hover:w-11/12"> </a> </li>
+               <li> <a href="https://www.instagram.com/elaisdev/"> <img src="https://i.ibb.co/71B1h02/insta.png" alt="insta" border="0" class="w-10/12 hover:w-11/12"> </a> </li>
                <li> <a href="https://www.youtube.com/channel/UCyzWE1mbGjDK6cix5UKYYMQ"> <img src="https://i.ibb.co/19NBGL6/youtube.png" alt="youtube" border="0" class="w-9/12 hover:w-11/12"> </a> </li>
            </ul>
         </div>
