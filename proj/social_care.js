@@ -59,7 +59,7 @@ const preventive = () => {
       
       //calcolo preventivo mensile in base al numero di social e 
       //post che vuole il cliente
-      monthly = (40 * posts);
+      monthly = (30 * posts);
 
       if (socials == 1) {
 
@@ -68,6 +68,16 @@ const preventive = () => {
        preventivo = preventivo + (5 * socials);
 
       }; 
+
+      //Aggiunta al preventivo in base alle stories 5€/ storia fino a 8 mensili, 4€ da 9 in poi
+
+      const stories = document.querySelector('#stories').value;
+
+      if (stories < 9 && stories > 0) {
+        monthly = monthly + (stories * 5);
+      } else {
+        monthly = monthly + (stories * 4);
+      }
 
 
 
