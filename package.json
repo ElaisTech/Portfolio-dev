@@ -1,15 +1,36 @@
 {
-  "name": "portfolio",
+  "name": "project_base_webpack",
   "version": "1.0.0",
-  "description": "",
+  "description": "my_webpack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "npx webpack-dev-server --mode=development"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElaisTech/Project_base_webpack.git"
+  },
+  "author": "Elais",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElaisTech/Project_base_webpack/issues"
+  },
+  "homepage": "https://github.com/ElaisTech/Project_base_webpack#readme",
+  "dependencies": {
+    "@babel/core": "^7.18.10",
+    "missing": "^0.0.1",
+    "webpack": "^5.74.0"
+  },
   "devDependencies": {
-    "tailwind": "^4.0.0"
+    "autoprefixer": "^10.4.8",
+    "babel-loader": "^8.2.5",
+    "html-loader": "^4.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "postcss": "^8.4.16",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.1.8",
+    "webpack-cli": "^4.10.0"
   }
 }

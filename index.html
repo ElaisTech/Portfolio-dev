@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TRRQD8G');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main_css/index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        </style>
+    <title>ElaisDev</title>
+    
+</head>
+<!--HeadBar-->
+<header class="bg-black top-0 fixed max-w-fit rounded-xl" style="font-family: 'Lobster', cursive; z-index: 1;">
+        <ul class="flex justify-between m-1">
+            <li class="text-white m-2"> <a href="#projects">Progetti</a> </li>
+            <li class="text-white m-2"> <a href="#knowledge">Competenze</a> </li>
+            <li class="text-white m-2"> <a href="./project/social_care.html">Social Managment</a> </li>
+            <li class="text-white m-2"> <a href="#">Chi sono?</a> </li>
+            <li class="text-white m-2"> <a href="./project/blog.html">Blog</a> </li>
+        </ul>
+      
+    
+</header>
+<!--HeadBar stop -->
+<body class="flex flex-col items-center justify-center bg-slate-400" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; background-image: url('/Portfolio/IMG/circuiti .png');">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRRQD8G"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  
+    <!--bodywrapper-->
+
+       <div class="flex flex-col bg-orange-100 " style="width: 80%; box-shadow: -1px 10px 20px 0px #3c3c3c;">
+
+        
+
+        <!--Avatar Wrapper-->
+        <div class="mt-10 flex justify-center items-center align-middle origin-center " id="imagewrapper" >
+            <img src="https://i.ibb.co/TgqHQVk/IMG-31-CCA31-B2-B25-1.png" alt="Elais' Avatar" border="0" style="max-width: 30%;">
+            <div class="lg:m-5">
+                 <div class="m-5">
+                    <h1>Ciao! Come ti chiami?</h1>
+                  <!-- <img src="https://i.ibb.co/VV81q1z/1200px-Speech-balloon-svg.png" alt="speech cloud" class="w-5/12 h-30"> -->
+                </div>
+                 <div class="flex justify-center">
+                      <div>
+                           <!--name input for the user-->
+                             <input type="text" id="nameinput" placeholder="come ti chiami?" class="shadow-lg" style="width: 8rem;">
+                     </div>
+                        <div>
+                            <!--Get the name through the button-->
+                            <button id="getname" class="bg-slate-300 shadow-lg">Click!</button>
+                        </div>
+                  </div>
+             </div>
+
+         </div>
+        
+         <!--knowledge-->
+         <div class="flex flex-col justify-center text-center items-center mt-8">
+             <div id="nicetomeetyou">
+
+             </div>
+             <h1 class="text-lg lg:text-3xl">Queste sono le mie competenze</h1>
+             <p class="flex justify-center text-xs lg:text-2xl">Cerco sempre di migliorarle ed aggiungerne di nuove! <br> Chi si ferma invecchia!
+             </p>
+         </div>
+        <div class="flex flex-col align-middle"> 
+    <!--il placeholder dove andrà la prima frase con il nome del nostro utente-->
+            <div id="output1">
+
+            </div>
+            <ul class="" style="margin: 3rem;" id="knowledge">
+                <div class="flex flex-col items-center" id="element" >
+                   
+                <li class="flex animate-bounce" style="margin: 1rem;" id="html" onscroll="disappear()">
+                    <p class="hover:text-gray-50 lg:text-2xl">HTML5</p>
+                    <div class="shadow-lg" style="margin-left: 1rem; width: 100px; background-color: rgb(250, 249, 215); border-radius: 10% 10px 10px 10px;">
+                        <p style="width: 90%;  border-radius: 10% 10px 10px 10px;" class="bg-yellow-300 hover:bg-orange-300">90%</p>
+                    </div>
+                </li>
+
+                <li class="flex animate-bounce" style="margin: 1rem;" id="css">
+                    <p class="hover:text-gray-50 lg:text-2xl">CSS</p>
+                    <div class="shadow-lg" style="margin-left: 1rem; width: 100px; background-color: rgb(250, 249, 215); border-radius: 10% 10px 10px 10px;">
+                        <p style="width: 95%; border-radius: 10% 10px 10px 10px;" class="bg-yellow-300 hover:bg-orange-300">95%</p>
+                    </div>
+                </li>
+
+                <li class="flex animate-bounce" style="margin: 1rem;" id="javascript">
+                    <p class="hover:text-gray-50 lg:text-2xl">Javascript</p>
+                    <div class="shadow-lg" style="margin-left: 1rem; width: 100px; background-color: rgb(250, 249, 215); border-radius: 10% 10px 10px 10px;">
+                        <p style="width: 45%; border-radius: 10% 10px 10px 10px;" class="bg-yellow-300 hover:bg-orange-300">45%</p>
+                    </div>
+                </li>
+                <li class="flex animate-bounce" style="margin: 1rem;" id="tailwind">
+                    <p class="hover:text-gray-50 lg:text-2xl">Tailwindcss</p>
+                    <div class="shadow-lg" style="margin-left: 1rem; width: 100px; background-color: rgb(250, 249, 215); border-radius: 10% 10px 10px 10px;">
+                        <p style="width: 45%;  border-radius: 10% 10px 10px 10px;" class="bg-yellow-300 hover:bg-orange-300">45%</p>
+                    </div>
+                </li>
+
+                <li class="flex animate-bounce" style="margin: 1rem;" id="react">
+                    <p class="hover:text-gray-50 lg:text-2xl">React</p>
+                    <div class="shadow-lg" style="margin-left: 1rem; width: 100px; background-color: rgb(250, 249, 215); border-radius: 10% 10px 10px 10px;">
+                        <p style="width: 10%;  border-radius: 10% 10px 10px 10px;" class="bg-yellow-300 hover:bg-orange-300">10%</p>
+                    </div>
+                </li>
+            </ul>
+            <!--knowledge stop-->
+          </div>
+<!--il placeholder dove andrà la seconda frase con il nome del nostro utente-->
+          <div class="flex flex-col justify-center text-center items-center m-10" id="output2">
+
+          </div>
+
+          <div class="flex justify-center">
+            <img src="https://i.ibb.co/QKpvJjB/Schermata-2022-05-07-alle-10-16-01.png" alt="Schermata-2022-05-07-alle-10-16-01" border="0" class="w-8/12 rounded-3xl shadow-2xl hover:w-9/12">
+          </div>
+          <!--My Works-->
+
+         
+
+        <div class="mt-10 flex justify-center items-center align-middle origin-center " id="output3">
+            
+
+        </div>
+            <!--start -->
+            <div>
+        <!--PROJECTS-->
+         <div class="flex flex-col justify-center lg:flex-row lg:justify-center lg:flex m-7" id="projects">
+
+              <div class="flex flex-col items-center justify-center mt-8 lg:m-5">
+
+                <h1>Work in progress</h1>
+                  <!--
+                  <p>Sito x</p>
+            
+                    <a href="#"><img src="https://i.ibb.co/zm51WX2/template.jpg" class="w-10/12 shadow-2xl" alt="Google-logo" border="0"></a>
+                
+            
+             </div>
+             <div class="flex flex-col items-center justify-center mt-8 lg:m-5">
+                      <p>Sito x</p>
+          
+                       <a href="#"><img src="https://i.ibb.co/zm51WX2/template.jpg" class="w-10/12 shadow-2xl" alt="Google-logo" border="0"></a>
+              
+          
+                     </div>
+             <div class="flex flex-col items-center justify-center mt-8 lg:m-5">
+                  <p>Sito x</p>
+          
+                    <a href="#"><img src="https://i.ibb.co/zm51WX2/template.jpg" class="w-10/12 shadow-2xl" alt="Google-logo" border="0"></a>
+              -->
+          
+             </div>
+         
+        </div>
+        <!--Stop-->
+
+       
+      
+
+       
+
+        <div class="flex justify-center m-10 mt-20">
+            <div class="flex flex-col text-center">
+            <h2>Stai cercando qualcuno che ti aiuti a creare la tua identità digitale?</h2>
+            <h3 class="m-10">Contattami subito!</h3>
+            <ul class="flex justify-center align-middle object-center">
+                <li> <a href="https://wa.me/3703664224"> <img src="https://i.ibb.co/cgCKwvG/whatsapp.png" alt="whatsapp" border="0" class="w-10/12 hover:w-11/12 animate-bounce"> </a> </li>
+                <li> <a href="#"> <img src="https://i.ibb.co/ZhbzKtv/facebook.png" alt="facebook" border="0" class="w-10/12 hover:w-11/12 animate-bounce" > </a> </li>
+                <li> <a href="https://www.instagram.com/elaisdev/"> <img src="https://i.ibb.co/71B1h02/insta.png" alt="insta" border="0" class="w-10/12 hover:w-11/12 animate-bounce"> </a> </li>
+                <li> <a href="https://www.youtube.com/channel/UCyzWE1mbGjDK6cix5UKYYMQ"> <img src="https://i.ibb.co/19NBGL6/youtube.png" alt="youtube" border="0" class="w-9/12 hover:w-11/12 animate-bounce"> </a> </li>
+            </ul>
+         </div>
+        </div>
+ 
+      
+           
+        <div class="m-10 ">
+            <ul class="flex justify-center flex-col items-center text-xs lg:text-10xl">
+                <li>Nome: Enrico</li>
+                <li>Mail: enrico.info.h3g@gmail.com</li>
+                <li>Numero: 3703664224</li>
+            </ul>
+        </div>
+     </div>
+
+
+    
+      
+    
+</body>
+<script src="./dist/bundle.js"></script>
+</html>
